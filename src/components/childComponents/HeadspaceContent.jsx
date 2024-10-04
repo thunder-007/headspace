@@ -1,7 +1,6 @@
 import React from 'react'
 import FeaturedCard from './FeaturedCard'
 import AdvertiseCard from './AdvatiseCard'
-import ExploreCard from './ExploreCard'
 import "./HeadspaceContent.css"
 
 const HeadspaceContent = () => {
@@ -14,7 +13,6 @@ const HeadspaceContent = () => {
       </div>
       <FeaturedCard />
       <AdvertiseCard />
-      <ExploreCard/>
     </div>
    </>
   )

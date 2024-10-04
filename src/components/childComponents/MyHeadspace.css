@@ -1,3 +1,44 @@
+.custom-music-player {
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.music-player-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.audio-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-element {
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+}
+
+.audio-element::-webkit-media-controls-panel {
+  background-color: #f4f4f9;
+  border-radius: 10px;
+}
+
+.audio-element::-webkit-media-controls-play-button,
+.audio-element::-webkit-media-controls-current-time-display,
+.audio-element::-webkit-media-controls-time-remaining-display,
+.audio-element::-webkit-media-controls-seek-back-button,
+.audio-element::-webkit-media-controls-seek-forward-button,
+.audio-element::-webkit-media-controls-volume-control-container {
+  color: #333;
+}
+
 .headspace-content-container {
     display: flex;
     align-items: center;
@@ -174,4 +215,5 @@
   .bottom-action.active::after {
     background-color: #ff7d1c; /* Active underline color */
   }
-    
+
+

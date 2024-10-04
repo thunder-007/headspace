@@ -4,6 +4,7 @@ import NotificationBar from '../components/NotificationBar'
 import HomeCards from "../components/HomeCards.jsx";
 import HeadspaceStories from "../components/HeadStories.jsx";
 import Wellness from "../components/childComponents/Wellness.jsx";
+import HeadspaceStats from "../components/childComponents/Stats.jsx";
 const Home = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Home = () => {
       <HomeCards/>
       <HeadspaceStories/>
       <Wellness/>
+      <HeadspaceStats/>
     </>
   )
 }

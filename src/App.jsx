@@ -13,8 +13,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/modes/meditate" element={<MyHeadspace title="Meditate"/>}/>
-        <Route path="/modes/focus" element={<MyHeadspace title="Focus"/>}/>
+        <Route path="/my_music" element={<MyHeadspace title="Meditate"/>}/>
 
       </Routes>
       </BrowserRouter>

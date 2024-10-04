@@ -1,7 +1,4 @@
-import React from "react";
 import { IoIosLock } from "react-icons/io";
-import top_img_meditate from "../../assets/Headspace-top-img.png";
-import top_img_focus from "../../assets/top-image-focus.png";
 import { useLocation } from "react-router-dom";
 
 export default function HeadspaceTop() {
@@ -13,7 +10,7 @@ export default function HeadspaceTop() {
       <div className="topitem-img-cont">
         <img
           className="top-item-img"
-          src={lastPart === "meditate" ? top_img_meditate : top_img_focus}
+          src="https://hs-prod-content.imgix.net/illus-navigating_injustice-loving_kindness_with_samantha-library_header-20211005-la.png?fm=png32&w=624&fs=png&ixlib=js-1.4.1&s=afb0ef0ced7e8b9ec5d45bda5262084e"
           alt=""
         />
       </div>
@@ -23,7 +20,7 @@ export default function HeadspaceTop() {
         </div>
         <div className="topitem-head box-head flex">
           <IoIosLock size={35} />
-          <p>{lastPart === "meditate" ? "Switching Task" : "Aluna's Playlist"}</p>
+          <p>Loving Kindness with Samantha</p>
         </div>
         <div className="topitem-info">
           {/* Conditional SVG Rendering */}
@@ -42,7 +39,7 @@ export default function HeadspaceTop() {
                 fill="#3A3938"
               ></path>
             </svg>
-            
+
           ) : (
             <svg
               viewBox="0 0 16 16"
@@ -60,13 +57,14 @@ export default function HeadspaceTop() {
             </svg>
           )}
           {lastPart==="meditate"?"Meditation • 3-4 min":"Focus music • 60 min"}
-        
+
         </div>
         <button className="topitem-button text-sm flex gap-3">
           <IoIosLock size={20} />
           Start My Free Trial
         </button>
       </div>
+
     </div>
   );
 }
