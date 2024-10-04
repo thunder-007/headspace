@@ -1,4 +1,3 @@
-import React from 'react';
 import MyHeadspaceNav from '../components/childComponents/MyHeadspaceNav';
 import HeadspaceTop from '../components/childComponents/HeadspaceTop';
 import "../components/childComponents/MyHeadspace.css";

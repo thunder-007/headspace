@@ -1,4 +1,3 @@
-import React from 'react'
 import FeaturedCard from './FeaturedCard'
 import AdvertiseCard from './AdvatiseCard'
 import "./HeadspaceContent.css"

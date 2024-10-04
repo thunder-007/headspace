@@ -1,14 +1,13 @@
-import React from "react";
 import "../styles/Landing.css";
-import left_img from "../assets/Hero_Image_left.webp";
-import right_img from "../assets/Hero_Right_Image_Default-2022.webp";
+import HeroImageLeft from '../assets/Hero_Image_left.webp';
+import HeroImageRight from "../assets/Hero_Right_Image_Default-2022.webp";
 
 const Landing = () => {
   return (
       <>
         <div className="main-component flex justify-between pt-24 min-h-screen relative">
           <div className="left-image flex">
-            <img className="max-md:h-6 max-md:w-8" src={left_img} alt="left-image" />
+            <img className="max-md:h-6 max-md:w-8" src={HeroImageLeft} alt="left-image" />
           </div>
           <div className="main-content flex-col text-center">
             <h2 className="text-6xl font-semibold">Make it your year</h2>
@@ -27,7 +26,7 @@ const Landing = () => {
             <button className="bg-blue-700 text-white text-lg rounded-full py-3 px-7 mt-9">Try for free</button>
           </div>
           <div className="right-image flex">
-            <img src={right_img} alt="right-image" />
+            <img src={HeroImageRight} alt="right-image" />
           </div>
 
           {/* Add the wave effect here */}
