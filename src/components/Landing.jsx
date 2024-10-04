@@ -1,6 +1,6 @@
 import "../styles/Landing.css";
-import HeroImageLeft from '../assets/Hero_Image_left.webp';
-import HeroImageRight from "../assets/Hero_Right_Image_Default-2022.webp";
+import HeroImageLeft from '../assets/Hero_Image_Left.png';
+import HeroImageRight from "../assets/Hero_Right_Image_Default-2022.png";
 
 const Landing = () => {
   return (
