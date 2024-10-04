@@ -5,6 +5,7 @@ import HomeCards from "../components/HomeCards.jsx";
 import HeadspaceStories from "../components/HeadStories.jsx";
 import Wellness from "../components/childComponents/Wellness.jsx";
 import HeadspaceStats from "../components/childComponents/Stats.jsx";
+import {LampDemo} from "../components/Lamp.jsx";
 const Home = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Home = () => {
       <HeadspaceStories/>
       <Wellness/>
       <HeadspaceStats/>
+      <LampDemo/>
     </>
   )
 }
