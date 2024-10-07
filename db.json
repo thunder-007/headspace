@@ -1,5 +1,12 @@
 {
   "audio": [
-    { "id": "1", "url": ""}
+    { "id": "1",
+      "url": "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav",
+      "title": "Baby Elephant Walk"
+    },
+    { "id": "1",
+      "url": "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav",
+      "title": "DJ Tillu"
+    }
   ]
 }
