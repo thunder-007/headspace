@@ -6,7 +6,7 @@ const Landing = () => {
   return (
       <>
         <div className="main-component flex justify-between pt-24 min-h-screen relative">
-          <div className="left-image flex">
+          <div className="left-image flex hidden md:flex">
             <img className="max-md:h-6 max-md:w-8" src={HeroImageLeft} alt="left-image" />
           </div>
           <div className="main-content flex-col text-center">
@@ -25,7 +25,7 @@ const Landing = () => {
             </div>
             <button className="bg-blue-700 text-white text-lg rounded-full py-3 px-7 mt-9">Try for free</button>
           </div>
-          <div className="right-image flex">
+          <div className="right-image flex hidden md:flex">
             <img src={HeroImageRight} alt="right-image" />
           </div>
 

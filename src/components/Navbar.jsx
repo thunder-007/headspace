@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import DropdownMenu from './DropdownMenu';
 import Logo from './Logo';
+import {signInWithGoogle} from "../../firebase-config.js";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,12 @@ export default function Navbar() {
     const handleMouseLeave = () => {
         setDropdown(false);
     };
+    const handleLogin = async () => {
+        console.log("presssssss");
+        await signInWithGoogle();
+        window.location.href = "/my_music"; // Redirect after login
+    };
+
 
     return (
         <nav className="bg-white px-4 py-5">
@@ -47,7 +54,7 @@ export default function Navbar() {
                     <p className="cursor-pointer hover:font-bold">About</p>
                     <p className="cursor-pointer hover:font-bold">Help</p>
                     <p className="cursor-pointer hover:font-bold" onClick={() => navigate("/my_music")}>My Headspace</p>
-                    <button className="bg-blue-700 text-white rounded-full py-2 px-5 cursor-pointer hover:bg-blue-800">
+                    <button  onClick={handleLogin} className="bg-blue-700 text-white rounded-full py-2 px-5 cursor-pointer hover:bg-blue-800">
                         Try for free
                     </button>
                 </div>
@@ -67,7 +74,7 @@ export default function Navbar() {
                     <p className="py-2 cursor-pointer hover:bg-gray-100">About</p>
                     <p className="py-2 cursor-pointer hover:bg-gray-100">Help</p>
                     <p className="py-2 cursor-pointer hover:bg-gray-100" onClick={() => navigate("/my_music")}>My Headspace</p>
-                    <button className="w-full bg-blue-700 text-white rounded-full py-2 px-5 cursor-pointer hover:bg-blue-800 mt-4">
+                    <button onClick={handleLogin} className="w-full bg-blue-700 text-white rounded-full py-2 px-5 cursor-pointer hover:bg-blue-800 mt-4">
                         Try for free
                     </button>
                 </div>
